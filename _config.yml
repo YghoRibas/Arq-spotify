@@ -6,4 +6,4 @@ plugins:
 # SET VARIABLES
 title: "Spotify Architecture"
 description: "Learning about microservices"
-show_downloads: "false"
+show_downloads: false
