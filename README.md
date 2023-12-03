@@ -1,5 +1,15 @@
 ## O caso Spotify (Introdução)
 O maior sistema de streaming de música da atualidade. Aqui discutiremos algumas escolhas e definições feitas pela equipe do Spotify para alcançar o sucesso desse aplicativo tão bem aceito pelo mercado. 
+
+## Modelo de sistema
+Os engenheiros do Spotify definiram um modelo de sistema padrão denominado Spotify Software Model e adaptaram o modelo C4 para visualizá-lo. Essa combinação criou uma linguagem compartilhada usada em toda a organização, que facilita a comunicação, auxilia na tomada de decisões e dá suporte à evolução do software do Spotify.
+### Spotify Software Model
+O modelo de sistema Spotify apresenta um conjunto de entidades principais e abstrações que são utilizadas para sintetizar dados sobre a integridade, propriedade e dependências de software.
+De acordo com Renato Kalman e Johan Wallin (funcionários de alto nível da empresa) apresentaram uma visão sobre o produto, deixam claro que esse modelo possuí três módulos core:  
+**API**: Os limites entre diferentes componentes, definindo a interface entre esses componentes.  
+**Componentes**: Peças individuais de software (por exemplo, um serviço de back-end, site, pipeline de dados, biblioteca).  
+**Recursos**: Infraestrutura necessária para operar um componente em tempo de execução (por exemplo, bancos de dados, máquinas virtuais, depósitos de armazenamento).  
+
 ## Arquitetura Utilizada
 Por conta do volume de usuários simultâneos e que utilizam o aplicativo diariamente, a estratégia abordada foi utilizar serviços de nuvem. 
 #### Microsserviços
@@ -20,3 +30,4 @@ O Kafka é usado como sistema de mensageria com eventos em tempo real na platafo
 [Docker e Kubernetes](https://kubernetes.io/case-studies/spotify/)
 [Helios](https://github.com/spotify/helios)
 [Docker hub Kafka](https://hub.docker.com/r/spotify/kafka)
+[Modelo do Spotify](https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/)
